@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Individuals</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href= "./css/reset.css">
+    <link rel="shortcut icon" href="./assets/Logo.png" type="image/png">
+  </head>
+  <body>
+    <div class="content">
+      <div class="logo">
+        <img src="./assets/Logo.png" alt="Logo" />
+        <h1>For Individuals</h1>
+        <p class="desktop">
+          Start benefiting from the wellness experience. For companies looking
+          on increasing productivity and improving organization wellness.
+        </p>
+
+        <p class="mobile">
+          Inspiring wholesome harmony for the mind,<br> body and spirit, for everyone, everywhere.
+        </p>
+      </div>
+    </div>
+
+    <section class="container">
+      <form action="#">
+        <div class="form-content">
+          
+          <div class="column">
+            <div class="short">
+              <div class="input-box first">
+                <label for="first-name">First Name</label>
+                <input type="text" placeholder="Tolu" required />
+              </div>
+            </div>
+            <div class="short">
+              <div class="input-box first">
+                <label for="last-name">Last Name</label>
+                <input type="text" placeholder="Oluwasetemi" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="short">
+              <div class="input-box">
+                <label for="gender">Gender</label>
+                <select required>
+                  <option class="placeholder" value="" disabled selected hidden>Select here</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+            </div>
+            <div class="short">
+              <div class="input-box">
+                <label for="dob">Date of Birth</label>
+                <input type="text" id="dob" placeholder="Select date" onfocus="this.type='date'" onblur="this.type='text'" >
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="short">
+              <div class="input-box">
+                <label for="weight">Weight (KG)</label>
+                <input type="text" placeholder="Enter weight here" required />
+              </div>
+            </div>
+            <div class="short">
+              <div class="input-box">
+                <label for="height">Height (CM)</label>
+                <input type="text" placeholder="Enter height here" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="input-box long">
+            <label for="activity-level">Activity Level</label>
+            <select required>
+              <option class="placeholder" value="" disabled selected hidden>Select here</option>
+              <option value="sedentary">Sedentary</option>
+              <option value="lightly-active">Lightly Active</option>
+              <option value="moderately-active">Moderately Active</option>
+              <option value="very-active">Very Active</option>
+              <option value="extremely-active">Extremely Active</option>
+            </select>
+          </div>
+
+          <div class="input-box long password">
+            <label for="password">Password</label>
+            <input type="password" required />
+            <div class="eye"></div>
+          </div>
+
+          <div class="button">
+            <button type="submit">Register</button>
+          </div>
+
+          <p>
+            By clicking Register, you agree to our
+            <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+          </p>
+        </div>
+      </form>
+    </section>
+
+    <p class="tc">
+      By clicking Register, you agree to our
+      <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+    </p>
+    
+  </body>
+</html>
+

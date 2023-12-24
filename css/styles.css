@@ -1,0 +1,491 @@
+@font-face {
+    font-family: "Brown";
+    src: url(/assets/FontsFree-Net-Brown-Regular-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Sofia Pro";
+    src: url(/assets/sofiapro-light.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+min-height: 100vh; 
+background: #F7FDFC;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+min-width: 100vw;
+width: 100vw;
+height: 840px;
+overflow-x: hidden;
+}
+
+.content { 
+    width: 460px;
+    height: 75px;
+    font-family: "Brown";
+    margin-right: 120px;
+    margin-left: 140px;
+    margin-bottom: 360px;
+}
+
+
+.container {
+    width: max-content;
+    max-width: 700px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+    border-radius: 6px;
+    margin-right: 140px;
+}
+
+
+div.form-content {
+    list-style-type: none;
+    padding: 40px;
+    font-family: "Sofia Pro";
+    height: 679px;
+    width: 100%;
+}
+
+
+.input-box {
+    margin-top: 30px;
+    height: 72px;
+}
+
+.first {
+    margin-top: 0;
+}
+
+.input-box input {
+    position: relative;
+    height: 48px;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    color: #737373;
+    font-weight: 300;
+    margin-top: 10px;
+    line-height: 20px;
+    padding: 0 15px;
+    letter-spacing: 0.2px;
+    border-radius: 2px;
+    border: 1px solid #F0F0F0;
+}
+
+.input-box input:hover {
+    border-radius: 2px;
+    border: 1px solid #2EC4B6;
+    box-shadow: 0px 0px 1px 1px #83f0e5,
+                0px 0px 2px 2px #cdf0ec ;
+    transition: 0.3s;
+}
+
+
+.input-box select {
+    position: relative;
+    height: 48px;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    color: #737373;
+    background-color: #fff;
+    font-weight: 300;
+    margin-top: 10px;
+    line-height: 20px;
+    padding: 0 16px;
+    letter-spacing: 0.2px;
+    border-radius: 2px;
+    border: 1px solid #F0F0F0;
+}
+
+.input-box select:hover{
+    border-radius: 2px;
+    border: 1px solid #2EC4B6;
+    box-shadow: 0px 0px 1px 1px #83f0e5,
+                0px 0px 2px 2px #cdf0ec ; 
+    transition: 0.3s;
+}
+
+
+
+.password {
+    position: relative;
+}
+
+.password .eye {
+    position: absolute;
+    background: url(/assets/show.svg);
+    top: 74%;
+    left: 94%;
+    width: 16px;
+    height: 16px;
+}
+
+
+
+.column .short {
+    display: inline-flex;
+    width: 238px; 
+    flex-direction: column;
+    margin-left: 0;
+}
+
+.column .short:last-child {
+    margin-left: 19px;
+}
+
+.input-box label {
+    color: #011C34;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    line-height: 14px;
+}
+
+.button {
+    margin-top: 30px;
+}
+button {
+    width: 500px;
+    height: 48px;
+    background-color:#2EC4B6;
+    color:#fff;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 540;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    border: none;
+}
+
+button:hover{
+    box-shadow: 0px 0px 1px 1px #83f0e5,
+                0px 0px 2px 2px #cdf0ec ; 
+    transition: 0.3s;
+}
+
+.form-content p {
+    color: #000;
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    padding-top: 16px;
+}
+
+p a {
+    color:#2EC4B6;
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+  
+  #dob {
+    background: #fff url(/assets/u_a_calendar-alt.svg);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 95%;
+  }
+
+  #dob::-webkit-calendar-picker-indicator{
+    opacity: 0;
+  }
+
+  
+
+  p.mobile {
+    display: none;
+    color:#737373;
+    font-family: "Brown";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+  }
+
+  .tc {
+    display: none;
+    color: #000;
+    text-align: center;
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-left: 30px;
+    margin-top: 24px;
+    margin-bottom: 64px;
+    margin-right: 30px;
+  }
+  
+  @media only screen and (max-width: 1240px) and (min-width: 540px) {
+    body {
+        display: grid;
+        width: 100%;
+        grid-template-rows: 172fr 870fr;
+        padding: 24px;
+        padding: auto;
+
+    }
+
+    .content {
+        height: 275px;
+        width: 460px;
+        margin: 40px 0;
+    }
+
+    .content .logo img {
+        width: 38.667px;
+        height: 40px;
+        margin-bottom: 40px;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+
+  }
+
+  @media screen and (max-width: 600px) {
+    body {
+        display: grid;
+        width: 100vw;
+        grid-template-rows: 172fr 870fr;
+        padding: 24px;
+        height: 1294px;
+    }
+
+    .content {
+        height: fit-content;
+        width: fit-content;
+        margin: 40px 0px;
+    }
+
+    .content .logo img {
+        width: 38.667px;
+        height: 40px;
+        margin-bottom: 40px;
+    }
+
+    .column .short:last-child{
+        margin-left: 0;
+        margin-top: 24px;
+    }
+
+    .container {
+        margin: auto;
+        width: 327px;
+        height: max-content;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+    div.form-content{
+        padding: 0 24px;
+        height: fit-content;
+    }
+
+    p.desktop {
+        display: none;
+    }
+
+    p.mobile {
+        display: inline;
+    }
+
+    .input-box {
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+
+    .column {
+        height: 201px;
+        padding-top: 24px;
+    }
+
+    .column .input-box:nth-child(2) {
+        padding-top: 24px;
+    }
+
+    .column .short{
+        width: 100%;
+    }
+
+    .long {
+        padding-top: 24px;
+        height: max-content;
+    }
+
+    .password .eye {
+        left: 90%;
+    }
+
+    .form-content p {
+        display: none;
+    }
+
+    .tc {
+        display: block;
+        padding-bottom: 64px;
+    }
+
+    button {
+    width: 279px;
+    height: 48px;
+    margin-bottom: 30px;
+    }
+  }
+ 
