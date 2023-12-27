@@ -91,6 +91,13 @@ div.form-content {
     transition: 0.3s;
 }
 
+.input-box input:focus {
+ color: #011C34;
+ font-size: 14px;
+ font-weight: 400;
+ line-height: 20px;
+ letter-spacing: 0.20px;
+}
 
 .input-box select {
     position: relative;
@@ -117,6 +124,13 @@ div.form-content {
     transition: 0.3s;
 }
 
+.input-box select:focus {
+ color: #011C34;
+ font-size: 14px;
+ font-weight: 400;
+ line-height: 20px;
+ letter-spacing: 0.20px;
+}
 
 
 .password {
